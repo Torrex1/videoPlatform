@@ -12,7 +12,7 @@
     .header__search {
         position: relative;
         width: 100%;
-        max-width: 30%;
+        max-width: 600px;
     }
 
     .header__search-container {
@@ -23,7 +23,7 @@
     .header__search-container > input {
         width: 100%;
         padding: 10px 12px 10px 35px;
-        border: 1px solid #ccc;
+        border: 1px solid #e4e4e4ab;
         border-radius: 6px;
         outline: none;
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { Search } from "~/shared/ui";
+    import { Search } from "~/shared/ui/search";
 </script>
 
 <template>
@@ -8,12 +8,16 @@
             <img src="" alt="logo">
         </div>
 
+        <!-- todo: пока так, потом в отдельный слой features где будет еще и логика поиска  -->
         <Search />
 
         <ul class="header__list">
+            <!-- todo: отдельный слой features или entities -->
             <li class="header__list-notification">
                 <img src="~/assets/notification.png" alt="icon">
             </li>
+
+            <!-- todo: отдельный слой features -->
             <li class="header__list-profile">
                 <span>RT</span>
             </li>
@@ -43,10 +47,11 @@
     }
 
     .header__list-profile > span {
-        width: 20px;
         border-radius: 50%;
-        border: 1px solid #ccc;
         padding: 14px;
+
+        background-color: #a8abbae6;
+        color: #ffffff;
         cursor: pointer;
     }
 
